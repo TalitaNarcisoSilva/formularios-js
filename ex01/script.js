@@ -10,7 +10,7 @@ formEx01.addEventListener("submit", function (evento) {
     const cpf = document.getElementById("cpf");
 
     //Testar nome 
-    if(nome.value.trim() == ""){
+    if (nome.value.trim() == "") {
         // invalido 
         nome.classList.add("is-invalid")
         nome.classList.remove("is-valid")
@@ -20,18 +20,19 @@ formEx01.addEventListener("submit", function (evento) {
         nome.classList.remove("is-invalid")
     }
 
-    if(nome.value.trim() == ""){
+    //Testar cpf
+    if (cpf.value.trim() == "") {
         // invalido 
         cpf.classList.add("is-invalid")
         cpf.classList.remove("is-valid")
     } else {
         // valido
         cpf.classList.add("is-valid");
-       cpf.classList.remove("is-invalid")
+        cpf.classList.remove("is-invalid")
     }
 
-
-
+    console.log("Nome: " + nome.value);
+    console.log("cpf: " + cpf.value);
 
 
 });
