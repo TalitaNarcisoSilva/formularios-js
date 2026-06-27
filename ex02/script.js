@@ -67,4 +67,10 @@ formEx02.addEventListener("submit", function (evento) {
         bebida.classList.remove("is-invalid")
     }
 
+    console.log("Nome: " + nome.value);
+    console.log("cpf: " + cpf.value);
+    console.log("pizza: " + pizza.value);
+    console.log("tamanho: " + tamanho.value);
+    console.log("bebida: " + bebida.value);
+
 });
