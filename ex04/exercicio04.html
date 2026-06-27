@@ -11,7 +11,7 @@
 
     <style>
         body {
-            background-color: #032d6b;
+            background-color: #4b0339;
             color: #000000;
         }
 
@@ -50,6 +50,12 @@
         .btn {
             border-radius: 12px;
         }
+
+        #icone {
+            background-color: #4b0339 !important;
+            width: 55px; 
+            height: 55px;
+        }
     </style>
 </head>
 
@@ -80,10 +86,13 @@
         <div class="offcanvas-body">
             <nav class="nav flex-column">
                 <a class="nav-link" href="./../index.html"><i class="bi bi-house me-2"></i> Home</a>
-                <a class="nav-link" href="./../ex01/exercicio01.html"><i class="bi bi-pencil-square me-2"></i> Exercício 1</a>
-                <a class="nav-link " href="./../ex02/exercicio02.html"><i class="bi bi-pencil-square me-2"></i> Exercício 2</a>
-                <a class="nav-link" href="./exercicio03.html"><i class="bi bi-people me-2"></i> Exercício 3</a>
-                <a class="nav-link active" href="./exercicio04.html"><i class="bi bi-card-checklist me-2"></i> Exercício 4</a>
+                <a class="nav-link" href="./../ex01/exercicio01.html"><i class="bi bi-pencil-square me-2"></i> Exercício
+                    1</a>
+                <a class="nav-link " href="./../ex02/exercicio02.html"><i class="bi bi-pencil-square me-2"></i>
+                    Exercício 2</a>
+                <a class="nav-link" href="./../ex03/exercicio03.html"><i class="bi bi-people me-2"></i> Exercício 3</a>
+                <a class="nav-link active" href="./exercicio04.html"><i class="bi bi-card-checklist me-2"></i> Exercício
+                    4</a>
                 <a class="nav-link" href="#"><i class="bi bi-bar-chart me-2"></i> Exercício 5</a>
                 <a class="nav-link" href="#"><i class="bi bi-calendar me-2"></i> Exercício 6</a>
                 <a class="nav-link" href="#"><i class="bi bi-gear me-2"></i> Exercício 7</a>
@@ -104,10 +113,14 @@
 
                 <nav class="nav flex-column">
                     <a class="nav-link" href="./../index.html"><i class="bi bi-house me-2"></i> Home</a>
-                    <a class="nav-link " href="./../ex01/exercicio01.html"><i class="bi bi-house me-2"></i> Exercício 1</a>
-                    <a class="nav-link" href="./../ex02/exercicio02.html"><i class="bi bi-pencil-square me-2"></i> Exercício 2</a>
-                    <a class="nav-link " href="./exercicio03.html"><i class="bi bi-people me-2"></i> Exercício 3</a>
-                    <a class="nav-link active" href="./exercicio04.html"><i class="bi bi-card-checklist me-2"></i> Exercício 4</a>
+                    <a class="nav-link " href="./../ex01/exercicio01.html"><i class="bi bi-house me-2"></i> Exercício
+                        1</a>
+                    <a class="nav-link" href="./../ex02/exercicio02.html"><i class="bi bi-pencil-square me-2"></i>
+                        Exercício 2</a>
+                    <a class="nav-link " href="./../ex03/exercicio03.html"><i class="bi bi-people me-2"></i> Exercício
+                        3</a>
+                    <a class="nav-link active" href="./exercicio04.html"><i class="bi bi-card-checklist me-2"></i>
+                        Exercício 4</a>
                     <a class="nav-link" href="#"><i class="bi bi-bar-chart me-2"></i> Exercício 5</a>
                     <a class="nav-link" href="#"><i class="bi bi-calendar me-2"></i> Exercício 6</a>
                     <a class="nav-link" href="#"><i class="bi bi-gear me-2"></i> Exercício 7</a>
@@ -130,63 +143,65 @@
                     <div class="card-body p-4 p-lg-5">
 
                         <div class="d-flex align-items-center mb-4">
-                            <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3"
-                                style="width: 55px; height: 55px;">
-                                <i class="bi bi-book-fill fs-3"></i>
+                            <div id="icone"
+                                class="bg-dark text-white rounded-circle d-flex align-items-center justify-content-center me-3">
+                                <i class="bi bi-cup-fill fs-3"></i>
                             </div>
 
                             <div>
                                 <h1 class="h4 mb-1">Exercicio 03</h1>
-                                <p class="text-muted mb-0">Preencha os dados abaixo para cadatrar o seu livro.</p>
+                                <p class="text-muted mb-0">Preencha os dados abaixo para realizar seu pedido.</p>
                             </div>
                         </div>
 
-                        <form id="formEx03">
+                        <form id="formEx04">
 
                             <div class="row">
                                 <div class="col-md-8 mb-3">
                                     <label for="nome" class="form-label">Nome completo</label>
-                                    <input type="text" class="form-control" id="nome" placeholder="Ex: João da Silva"> 
-                                    <div class="invalid-feedback"> Preencha o seu nome </div>     
+                                    <input type="text" class="form-control" id="nome" placeholder="Ex: João da Silva">
+                                    <div class="invalid-feedback"> Preencha o seu nome </div>
                                     <div class="valid-feedback"> Válido </div>
-                                                                
-                                </div>                     
+
+                                </div>
 
                                 <div class="col-md-4 mb-3">
                                     <label for="cpf" class="form-label">CPF</label>
                                     <input type="text" class="form-control" id="cpf" placeholder="123.456.789-00">
-                                    <div class="invalid-feedback"> Preencha seu CPF </div>     
-                                    <div class="valid-feedback"> Válido </div>                                      
+                                    <div class="invalid-feedback"> Preencha seu CPF </div>
+                                    <div class="valid-feedback"> Válido </div>
                                 </div>
 
                                 <div class="col-md-8 mb-3">
-                                    <label for="titulo" class="form-label">Preencha o titulo do livro</label>
-                                    <input type="text" class="form-control" id="titulo" placeholder="Ex: A princesa e o sapo"> 
-                                    <div class="invalid-feedback"> preencha o titulo </div>     
-                                    <div class="valid-feedback"> Válido </div>                                     
+                                    <label for="tamanho" class="form-label">Escolha o tamanho do Açai</label>
+                                    <input type="text" class="form-control" id="tamanho"
+                                        placeholder="Ex: 300ml, 500ml, 700ml">
+                                    <div class="invalid-feedback"> Escolha o tamanho </div>
+                                    <div class="valid-feedback"> Válido </div>
                                 </div>
 
                                 <div class="col-md-4 mb-3">
-                                    <label for="autor" class="form-label">Autor do livro</label>
-                                    <input type="text" class="form-control" id="autor" placeholder="Ex: Mauricio de Souza">  
-                                    <div class="invalid-feedback"> Preencha o nome do autor </div>     
-                                    <div class="valid-feedback"> Válido </div>                                    
+                                    <label for="calda" class="form-label">Escolha o sabor da calda</label>
+                                    <input type="text" class="form-control" id="calda" placeholder="Ex: Morango">
+                                    <div class="invalid-feedback"> escolha calda </div>
+                                    <div class="valid-feedback"> Válido </div>
                                 </div>
 
                                 <div class="col-md-6 mb-3">
-                                    <label for="ano" class="form-label">Ano de públicação</label>
-                                    <input type="text" class="form-control" id="ano" placeholder="Ex: 2026"> 
-                                    <div class="invalid-feedback"> Escreva o Ano de públicação </div>     
-                                    <div class="valid-feedback"> Válido </div>                                     
+                                    <label for="fruta" class="form-label">Escolha sua fruta adicional</label>
+                                    <input type="text" class="form-control" id="fruta" placeholder="Ex: banana">
+                                    <div class="invalid-feedback"> Escolha a fruta </div>
+                                    <div class="valid-feedback"> Válido </div>
                                 </div>
 
                                 <div class="col-md-6 mb-3">
-                                    <label for="genero" class="form-label">Gênero do livro</label>
-                                    <input type="text" class="form-control" id="genero" placeholder="Ex: fantasia, romance..."> 
-                                    <div class="invalid-feedback"> Escreva o gênero do livro </div>     
-                                    <div class="valid-feedback"> Válido </div>                                     
+                                    <label for="complemento" class="form-label">Escolha seu complemento</label>
+                                    <input type="text" class="form-control" id="complemento"
+                                        placeholder="Ex: leite em pó">
+                                    <div class="invalid-feedback"> Escolha complemento </div>
+                                    <div class="valid-feedback"> Válido </div>
                                 </div>
-                            </div>                          
+                            </div>
 
                             <div class="d-grid gap-2 d-md-flex">
                                 <button type="submit" class="btn btn-success flex-fill">
